@@ -1,0 +1,50 @@
+﻿
+@model IEnumerable<nyikoStudyGroup.Models.StudentModel>
+
+@{
+    ViewBag.Title = "ListStudents";
+}
+
+<h2>ListStudents</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(Model => Model._studentNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(Model => Model._name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(Model => Model._surname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(Model => Model._emailAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(Model => Model.myLink)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+     {
+        <tr>
+            <th>
+                @Html.DisplayFor(modelItem => item._studentNumber)
+            </th>
+            <th>
+                @Html.DisplayFor(modelItem => item._name)
+            </th>
+            <th>
+                @Html.DisplayFor(modelItem => item._surname)
+            </th>
+            <th>
+                @Html.DisplayFor(modelItem => item._emailAddress)
+            </th>
+            <th>
+                <a href="@Url.Content(item.myLink)">My Link</a>
+            </th>
+        </tr>
+     }
+
+</table>
