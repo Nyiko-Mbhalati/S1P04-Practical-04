@@ -3,115 +3,164 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
-    <link href="../Content/StudentPage.css" rel="stylesheet" />
+    <!--<link href="../Content/StudentPage.css" rel="stylesheet" />-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="navbar">
-        <ul class="navbar-links">
-            <li><a href="/Home/Index">Main</a></li>
-            <li><a href="/Student/ListStudents">List</a></li>
-            <li><a href="HtmlPageNyiko.html" >Nyiko Mbhalati</a></li>
-            <li><a href="HtmlPageMichael.html" class="active-link">Michael Neto</a></li>
-            <li><a href="HtmlPageBusi.html">Busi Paul</a></li>
-            <li><a href="HtmlPageNaledi.html">Naledi Nkwana</a></li>
-            <li><a href="HtmlPageThato.html">Thato Modise</a></li>
-            <li><a id="back-btn" href="#" onclick="history.back(); return false;">Back</a></li>
-        </ul>
-    </nav>
 
-    <div style="margin-left: 100px;">
+    <div style="text-align:center; margin-top:30px; margin-bottom: 30px;">
         <h2>Michael Neto</h2>
     </div>
 
-    <div class="container-bio">
-        <div class="container-bio-image-flipper">
-            <img src="../HTML/Images/Michael Icon.png" class="container-bio-image" />
-        </div>
-        <div class="container-bio-text">
+    <nav class="navbar navbar-dark bg-dark justify-content-center">
 
-            <h3 class="container-bio-text-heading">Biography and Background</h3>
+        <ul class="nav justify-content-center nav-pills nav-fill">
+            <li class="nav-item">
+                <a class="nav-link" href="/Home/Index">Main</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Student/ListStudents">List</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="HtmlPageNyiko.html">Nyiko Mbhalati</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="HtmlPageMichael.html">Michael Neto</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="HtmlPageBusi.html">Busi Paul</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="HtmlPageNaledi.html">Naledi Nkwana</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="HtmlPageThato.html">Thato Modise</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#" onclick="history.back(); return false;">Back</a>
+            </li>
+        </ul>
 
-            <p class="container-bio-text-p">
-                Michael is from the North West province. He grew up in a town called Rustenburg. He is studying (Bsc)Information and Knowledge Systems.
-                He is studying to become a tech guy.
-            </p>
+    </nav>
 
-        </div>
-    </div>
+    <div class="container-lg" style="margin-top:30px">
 
-    <div class="container-hobbies">
-        <div class="container-hobbies-text">
+        <div class="card" style="background-color:grey;">
+            <div class="card-body">
+                <div class="card-header">
+                    <h3>Biography and Background</h3>
+                </div>
 
-            <h3 class="container-hobbies-text-heading">Hobbies</h3>
+                <div class="container-fluid">
 
-            <p class="container-hobbies-text-p">
-                He enjoys gaming on his personal computer and playing mobile games. He likes listening to music. He enjoys programming and writing code.
-            </p>
+                    <div class="row">
 
-        </div>
-        <div class="container-bio-image-flipper">
-            <img src="../HTML/Images/Game Icon.png" class="container-hobbies-image" />
-        </div>
-    </div>
+                        <div class="col" style="padding:20px">
+                            <img src="../HTML/Images/Michael Icon.png" class="rounded float-start" alt="..." style="max-height: 200px; max-width: 200px; justify-content:center" />
+                        </div>
+                        <div class="col" style="padding:20px">
+                            <p>
+                                Michael is from the North West province. He grew up in a town called Rustenburg. He is studying (Bsc)Information and Knowledge Systems.
+                                He is studying to become a tech guy.
+                            </p>
+                        </div>
+                    </div>
 
-    <div class="container-module">
-        <div class="contianer-module-text">
-            <h3 class="container-module-text-heading">Modules</h3>
-        </div>
-
-        <div class="container-module-table">
-            <table>
-                <tr>
-                    <th>
-                        Modules Semester 1
-                    </th>
-                    <th>
-                        Modules Semester 2
-                    </th>
-                </tr>
-                <tr>
-                    <td>
-                        Theoretical Computer Science 210
-                    </td>
-                    <td>
-                        Software Modelling 214
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Data Structures and Algorithms 212
-                    </td>
-                    <td>
-                        Concurrent System 226
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Netcentric Computer Systems 216
-                    </td>
-                    <td>
-                        Computer Organisation and Architecture 284
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Introduction to Database Systems 221
-                    </td>
-                    <td>
-                        Discrete Structures 285
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Advanced Web Technologies 1 210
-                    </td>
-                    <td>
-                        Advanced Web Technologies 2 220
-                    </td>
-                </tr>
-            </table>
+                </div>
+            </div>
         </div>
 
+        <div class="card">
+            <div class="card-body">
+
+                <div class="card-header">
+                    <h3>Hobbies</h3>
+                </div>
+
+                <div class="container-fluid">
+
+                    <div class="row">
+
+                        <div class="col" style="padding:20px">
+                            <p>
+                                Michael is from the North West province. He grew up in a town called Rustenburg. He is studying (Bsc)Information and Knowledge Systems.
+                                He is studying to become a tech guy.
+                            </p>
+                        </div>
+                        <div class="col" style="padding:20px">
+                            <img src="../HTML/Images/Game Icon.png" class="rounded float-start" alt="..." style="max-height: 200px; max-width: 200px " />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="background-color: grey;">
+            <div class="card-body">
+
+                <div class="card-header">
+                    <h3>Modules</h3>
+                </div>
+
+                <div class="container-fluid text-center">
+
+                    <div class="row justify-content-center" style="padding:20px">
+                        <table>
+                            <tr>
+                                <th>
+                                    Modules Semester 1
+                                </th>
+                                <th>
+                                    Modules Semester 2
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Theoretical Computer Science 210
+                                </td>
+                                <td>
+                                    Software Modelling 214
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Data Structures and Algorithms 212
+                                </td>
+                                <td>
+                                    Concurrent System 226
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Netcentric Computer Systems 216
+                                </td>
+                                <td>
+                                    Computer Organisation and Architecture 284
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Introduction to Database Systems 221
+                                </td>
+                                <td>
+                                    Discrete Structures 285
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Advanced Web Technologies 1 210
+                                </td>
+                                <td>
+                                    Advanced Web Technologies 2 220
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
     </div>
 

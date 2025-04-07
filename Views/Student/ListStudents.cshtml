@@ -24,6 +24,9 @@
         <th>
             @Html.DisplayNameFor(Model => Model.myLink)
         </th>
+        <th>
+            @Html.DisplayNameFor(Model => Model.Id) 
+        </th>
     </tr>
 
     @foreach (var item in Model)
@@ -43,6 +46,9 @@
             </th>
             <th>
                 <a href="@Url.Content(item.myLink)">My Link</a>
+            </th>
+            <th>
+                <a href="@Url.Action("Delete", "Student", new { i = item.Id })">Delete</a>
             </th>
         </tr>
      }

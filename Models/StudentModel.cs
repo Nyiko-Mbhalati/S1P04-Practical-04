@@ -22,5 +22,9 @@ namespace nyikoStudyGroup.Models
 
 		[Display(Name = "Link to Personal Page")]
 		public string myLink { get; set; }
+
+		[Display(Name = "Delete")]
+		public int Id { get; set; }
+
     }
 }
