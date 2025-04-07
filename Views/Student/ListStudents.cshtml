@@ -10,7 +10,7 @@
 
 <h2>ListStudents</h2>
 
-<table class="table">
+<table class="table" id="studentTable">
     <tr>
         <th>
             @Html.DisplayNameFor(Model => Model._studentNumber)
@@ -35,27 +35,28 @@
     @foreach (var item in Model)
     {
         <tr>
-            <th>
+            <td>
                 @Html.DisplayFor(modelItem => item._studentNumber)
-            </th>
-            <th>
+            </td>
+            <td class="student-name" id="student">
                 @Html.DisplayFor(modelItem => item._name)
-            </th>
-            <th>
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item._surname)
-            </th>
-            <th>
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item._emailAddress)
-            </th>
-            <th>
+            </td>
+            <td>
                 <a href="@Url.Content(item.myLink)" class="btn btn-dark" >My Link</a>
-            </th>
-            <th>
-                <a href="@Url.Action("Delete", "Student", new { i = item.Id })" class="btn btn-dark" >Delete</a>
-            </th>
+            </td>
+            <td>
+                <a href="@Url.Action("Delete", "Student", new { i = item.Id })" class="btn btn-dark" onclick="Delete(id)">Delete</a>
+            </td>
         </tr>
     }
 
 </table>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+<script src="~/Scripts/MyJavaScript.js"></script>
